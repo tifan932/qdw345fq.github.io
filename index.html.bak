@@ -253,7 +253,7 @@
                     <div class="text-center mb-4 pricing-tab">
                         <ul class="nav nav-pills rounded-pill justify-content-center d-inline-block shadow-sm" id="pricingpills-tab" role="tablist">
                             <li class="nav-item d-inline-block">
-                                <a class="nav-link rounded-pill active" id="pills-monthly-tab" data-bs-toggle="pill" href="#pills-monthly" role="tab" aria-controls="pills-monthly" aria-selected="true">VIP1</a>
+                                <a class="nav-link rounded-pill active" id="pills-monthly-tab" data-bs-toggle="pill" href="#pills-monthly" role="tab" aria-controls="pills-monthly" aria-selected="true">月付</a>
                             </li>
                         </ul>
                     </div>
@@ -263,21 +263,21 @@
                                                             <div class="col-12 col-md-4 col-lg-4">
                                     <div class="pricing shadow rounded-lg">
                                         <div class="pricing-title">
-                                            30G-VIP1-月付
+                                            标准版
                                         </div>
                                         <div class="pricing-padding">
                                             <div class="pricing-price">
-                                                <div>¥20</div>
+                                                <div>¥6</div>
                                                 <div>每月</div>
                                             </div>
                                             <div class="pricing-details">
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
-                                                    <div class="pricing-item-label">30GB 使用流量</div>
+                                                    <div class="pricing-item-label">50GB 使用流量</div>
                                                 </div>
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
-                                                    <div class="pricing-item-label">3个 在线客户端</div>
+                                                    <div class="pricing-item-label">2个 在线客户端</div>
                                                 </div>
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
@@ -305,21 +305,21 @@
                                                             <div class="col-12 col-md-4 col-lg-4">
                                     <div class="pricing shadow rounded-lg">
                                         <div class="pricing-title">
-                                            270G-VIP1-季付
+                                            高级版
                                         </div>
                                         <div class="pricing-padding">
                                             <div class="pricing-price">
-                                                <div>¥50</div>
-                                                <div>每季</div>
+                                                <div>¥9</div>
+                                                <div>每月</div>
                                             </div>
                                             <div class="pricing-details">
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
-                                                    <div class="pricing-item-label">270GB 使用流量</div>
+                                                    <div class="pricing-item-label">100GB 使用流量</div>
                                                 </div>
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
-                                                    <div class="pricing-item-label">5个 在线客户端</div>
+                                                    <div class="pricing-item-label">4个 在线客户端</div>
                                                 </div>
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
@@ -347,21 +347,21 @@
                                                             <div class="col-12 col-md-4 col-lg-4">
                                     <div class="pricing shadow rounded-lg">
                                         <div class="pricing-title">
-                                            1300G-VIP1-年付
+                                            加强版
                                         </div>
                                         <div class="pricing-padding">
                                             <div class="pricing-price">
-                                                <div>¥159</div>
-                                                <div>每年</div>
+                                                <div>¥18</div>
+                                                <div>每月</div>
                                             </div>
                                             <div class="pricing-details">
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
-                                                    <div class="pricing-item-label">1300GB 使用流量</div>
+                                                    <div class="pricing-item-label">300GB 使用流量</div>
                                                 </div>
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
-                                                    <div class="pricing-item-label">10个 在线客户端</div>
+                                                    <div class="pricing-item-label">6个 在线客户端</div>
                                                 </div>
                                                                                             <div class="pricing-item">
                                                     <div style="width:25px; height:25px;line-height: 20px;color:#3c2299;"><i class="fas fa-check-circle"></i></div>
