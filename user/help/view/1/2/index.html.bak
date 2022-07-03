@@ -196,7 +196,7 @@
 <p>安装时请选择：为使用这台电脑的任何人安装（所有用户）</p>
 <p>运行时请右键 -> 以管理员身份运行</p>
 <p><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.23/Clash.for.Windows.Setup.0.19.23.exe" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
-<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>转到<code>首页</code>，输入TiFANID后点击这个按钮 👇👇👇</p>
+<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>点击这个按钮 👇👇👇</p>
 <p><button type="button" class="btn btn-clash waves-effect waves-light" onclick="importSublink(&#39;clash&#39;)"><i class="cool-clash"></i> 一键导入 Clash</button>
 
 </p>
