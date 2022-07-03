@@ -196,9 +196,9 @@
                         <div class="input-group-prepend">
                             <button class="btn btn-danger waves-effect" type="button" data-toggle="modal" data-target="#reset-invite-modal">重置链接</button>
                         </div>
-                        <input type="text" class="form-control" readonly="" value="https://tifan.ga/auth/register?code=?">
+                        <input type="text" class="form-control" readonly="" value="https://ssrla.de/auth/register?code=ZOev">
                         <div class="input-group-append">
-                            <button class="copy-text btn btn-primary waves-effect" type="button" data-clipboard-text="https://tifan.ga/auth/register?code=?">复制链接</button>
+                            <button class="copy-text btn btn-primary waves-effect" type="button" data-clipboard-text="https://ssrla.de/auth/register?code=ZOev">复制链接</button>
                         </div>
                     </div>
                     
