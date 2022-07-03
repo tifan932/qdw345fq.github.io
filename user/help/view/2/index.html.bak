@@ -158,7 +158,7 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="/user">使用教程</a>
                                     </li>
-                                    <li class="breadcrumb-item">macOS</li>
+                                    <li class="breadcrumb-item">Android</li>
                                 </ol>
                             </div>
                         </div>
@@ -177,7 +177,9 @@
                                 <hr>
                                 <div class="card-body" style="padding: 0 1rem 1rem 1rem">
                                         <ul class="list-group list-group-flush">
-                                                                                            <li class="list-group-item" onclick="location='/user/help/view/4/9'">ClashX</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/6'">V2rayNG</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/5'">ShadowsocksR</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/4'">Clash for Android</li>
                                                                                     </ul>
                                 </div>
                             </div>

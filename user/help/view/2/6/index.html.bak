@@ -158,7 +158,7 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="/user">使用教程</a>
                                     </li>
-                                    <li class="breadcrumb-item">macOS</li>
+                                    <li class="breadcrumb-item">Android</li>
                                 </ol>
                             </div>
                         </div>
@@ -177,8 +177,9 @@
                                 <hr>
                                 <div class="card-body" style="padding: 0 1rem 1rem 1rem">
                                         <ul class="list-group list-group-flush">
-                                                                                            <li class="list-group-item" onclick="location='/user/help/view/4/9'">ClashX</li>
-                                                                                            <li class="list-group-item" onclick="location='/user/help/view/4/10'">ShawdowsockX-NG-R8 </li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/6'">V2rayNG</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/5'">ShadowsocksR</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/4'">Clash for Android</li>
                                                                                     </ul>
                                 </div>
                             </div>
@@ -189,17 +190,19 @@
                                 <div class="card-body">
                                     <div id="my-content">
                                                                                     <h4 class="card-title mb-1">
-                                                ShawdowsockX-NG-R8  使用教程
+                                                V2rayNG 使用教程
                                             </h4>
-                                            <p class="mb-2">最后更新于 2021-09-22 00:31:40</p>
-                                                                                        <h2 id="h2-1-"><a name="1." class="reference-link"></a><span class="header-link octicon octicon-link"></span>1.</h2><p>下载 <code>ShawdowsockX-NG-R8</code> 客户端，安装后运行。</p>
-<p><a href="/clients/ssr-mac.dmg" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
-<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>点击屏幕右上角小飞机图标，选择 <code>服务器</code> > <code>编辑订阅</code>，然后点击左下角 <code>+</code>号，粘贴订阅地址，组名填写为 <code>Cool</code>，最后点击 <code>OK</code></p>
-<p><button type="button" class="btn btn-ssr waves-effect waves-light copy-text" data-clipboard-text="https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=1"><i class="cool-ssr"></i> 复制 SSR 订阅</button>
+                                            <p class="mb-2">最后更新于 2022-06-22 22:37:56</p>
+                                                                                        <h2 id="h2-1-"><a name="1." class="reference-link"></a><span class="header-link octicon octicon-link"></span>1.</h2><p>下载 <code>v2rayNG</code> 客户端。</p>
+<p><a href="https://github.com/2dust/v2rayNG/releases/download/1.7.3/v2rayNG_1.7.3.apk" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
+<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>打开 <code>V2rayNG</code> 点击左上角的菜单图标打开侧边栏，随后点击 订阅设置。点击右上角的加号按钮，在新页面的备注中填写本站名称，地址输入框中粘贴订阅链接并点击右上角的 。</p>
+<p><button type="button" class="btn btn-v2ray waves-effect waves-light copy-text" data-clipboard-text="https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=3"><i class="cool-v2rayng"></i> 复制 V2ray 订阅</button>
 
 </p>
-<h2 id="h2-3-"><a name="3." class="reference-link"></a><span class="header-link octicon octicon-link"></span>3.</h2><p>再次点击屏幕右上角小飞机图标，选择 <code>服务器</code> > <code>手动更新订阅</code></p>
-<h2 id="h2-4-"><a name="4." class="reference-link"></a><span class="header-link octicon octicon-link"></span>4.</h2><p>再次点击屏幕右上角小飞机图标，选择 <code>打开Shadowsocks</code> 即可使用。</p>
+<h2 id="h2-3-"><a name="3." class="reference-link"></a><span class="header-link octicon octicon-link"></span>3.</h2><p>再次从侧边栏进入 <code>设置</code> 页面，点击 <code>路由模式</code> 将其更改为 <code>绕过局域网及大陆地址</code></p>
+<h2 id="h2-4-"><a name="4." class="reference-link"></a><span class="header-link octicon octicon-link"></span>4.</h2><p>随后从侧边栏回到 <code>配置文件</code> 页面，点击右上角的省略号图标选择更新订阅。</p>
+<h2 id="h2-5-"><a name="5." class="reference-link"></a><span class="header-link octicon octicon-link"></span>5.</h2><p>点击选择您需要的节点，点击右下角的按钮即可连接。</p>
+<h2 id="h2-6-"><a name="6." class="reference-link"></a><span class="header-link octicon octicon-link"></span>6.</h2><p>还是不会？没关系，这里有视频教程<br><a href="https://pan.apipi.de/s/8jHo?path=%2FMP4">https://pan.apipi.de/s/8jHo?path=%2FMP4</a></p>
 
                                                                             </div>
                                 </div>

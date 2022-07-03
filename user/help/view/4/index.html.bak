@@ -178,6 +178,7 @@
                                 <div class="card-body" style="padding: 0 1rem 1rem 1rem">
                                         <ul class="list-group list-group-flush">
                                                                                             <li class="list-group-item" onclick="location='/user/help/view/4/9'">ClashX</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/4/10'">ShawdowsockX-NG-R8 </li>
                                                                                     </ul>
                                 </div>
                             </div>

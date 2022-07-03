@@ -67,15 +67,6 @@
 						                <div class="time text-primary"></div>
 						              </div>
 						            </a>
-
-
-    						                <i class="fas fa-exclamation-triangle"></i>
-    						              </div>
-
-    						                您的会员计划已过期，请及时到商店购买。
-    						                <div class="time"></div>
-    						              </div>
-    						            </a>
 						            						            						            						          </div>
 						        </div>
 	                        </li>
@@ -187,7 +178,6 @@
                                 <div class="card-body" style="padding: 0 1rem 1rem 1rem">
                                         <ul class="list-group list-group-flush">
                                                                                             <li class="list-group-item" onclick="location='/user/help/view/2/6'">V2rayNG</li>
-                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/5'">ShadowsocksR</li>
                                                                                             <li class="list-group-item" onclick="location='/user/help/view/2/4'">Clash for Android</li>
                                                                                     </ul>
                                 </div>
@@ -199,19 +189,17 @@
                                 <div class="card-body">
                                     <div id="my-content">
                                                                                     <h4 class="card-title mb-1">
-                                                ShadowsocksR 使用教程
+                                                Clash for Android 使用教程
                                             </h4>
-                                            <p class="mb-2">最后更新于 2021-09-22 00:14:02</p>
-                                                                                        <h2 id="h2-1-"><a name="1." class="reference-link"></a><span class="header-link octicon octicon-link"></span>1.</h2><p>下载 <code>SSR</code> 客户端。</p>
-<p><a href="/clients/ssr-android.apk" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
-<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>打开 <code>ShadowsocksR(R)</code> 点击左上角的<code>「ShadowsocksR」</code>进入配置文件管理页面。</p>
-<p>点击右下角的加号按钮，在弹出的选项中选择 <code>「添加/升级 SSR 订阅」</code>。</p>
-<p><button type="button" class="btn btn-ssr waves-effect waves-light copy-text" data-clipboard-text="https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=1"><i class="cool-ssr"></i> 复制 SSR 订阅</button>
-
+                                            <p class="mb-2">最后更新于 2022-06-22 22:38:33</p>
+                                                                                        <h2 id="h2-1-"><a name="1." class="reference-link"></a><span class="header-link octicon octicon-link"></span>1.</h2><p>下载 <code>Clash for Android</code> 客户端。</p>
+<p><a href="https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.9/cfa-2.5.9-foss-universal-release.apk" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
+<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>点击这个按钮 👇👇👇</p>
+<p><button type="button" class="btn btn-clash waves-effect waves-light" onclick="importSublink(&#39;clash&#39;)"><i class="cool-clash"></i>  一键导入托管配置到 Clash for Android</button>
 
 </p>
-<h2 id="h2-3-"><a name="3." class="reference-link"></a><span class="header-link octicon octicon-link"></span>3.</h2><p>点击选择您需要的节点，随后往下划到功能设置处，点击<code>「路由」</code>将其更改为 <code>绕过局域网及中国大陆地址</code>。</p>
-<p>随后往上划到顶部，点击右上角小飞机即可成功连接。</p>
+<h2 id="h2-3-"><a name="3." class="reference-link"></a><span class="header-link octicon octicon-link"></span>3.</h2><p>会到主界面，点击顶部灰色卡片，卡片颜色变成蓝色即代表代理已开启。</p>
+<p>开启后，可在第二个卡片 <code>Proxy</code> 里切换节点。</p>
 
                                                                             </div>
                                 </div>

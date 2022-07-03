@@ -178,6 +178,7 @@
                                 <div class="card-body" style="padding: 0 1rem 1rem 1rem">
                                         <ul class="list-group list-group-flush">
                                                                                             <li class="list-group-item" onclick="location='/user/help/view/4/9'">ClashX</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/4/10'">ShawdowsockX-NG-R8 </li>
                                                                                     </ul>
                                 </div>
                             </div>
@@ -187,6 +188,22 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div id="my-content">
+                                                                                    <h4 class="card-title mb-1">
+                                                ClashX 使用教程
+                                            </h4>
+                                            <p class="mb-2">最后更新于 2022-06-22 22:36:07</p>
+                                                                                        <h2 id="h2-1-"><a name="1." class="reference-link"></a><span class="header-link octicon octicon-link"></span>1.</h2><p>下载 <code>ClashX</code> 客户端，安装后运行 <code>ClashX</code></p>
+<p><a href="https://github.com/yichengchen/clashX/releases/download/1.94.0/ClashX.dmg" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
+<p><img src="/theme/cool/img/tutorial/mac-clashx-1.png"" alt="clashx" title="clashx"></p>
+<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>转到<code>首页</code>，输入TiFANID后点击这个按钮 👇👇👇</p>
+<p><button type="button" class="btn btn-clash waves-effect waves-light" onclick="importSublink(&#39;clash&#39;)"><i class="cool-clash"></i>  一键导入托管配置到 ClashX</button>
+
+</p>
+<p><img src="/theme/cool/img/tutorial/mac-clashx-2.png"" alt="clashx" title="clashx"></p>
+<h2 id="h2-3-"><a name="3." class="reference-link"></a><span class="header-link octicon octicon-link"></span>3.</h2><p>点击 ClashX 图标，勾选 <code>设置为系统代理</code> 即可启用。</p>
+<p><img src="/theme/cool/img/tutorial/mac-clashx-3.png"" alt="clashx" title="clashx"></p>
+<h2 id="h2-4-"><a name="4." class="reference-link"></a><span class="header-link octicon octicon-link"></span>4.</h2><p>还是不会？没关系，这里有视频教程<br><a href="https://pan.apipi.de/s/8jHo?path=%2FMP4">https://pan.apipi.de/s/8jHo?path=%2FMP4</a></p>
+
                                                                             </div>
                                 </div>
                             </div>
