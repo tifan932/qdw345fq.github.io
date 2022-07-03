@@ -221,13 +221,35 @@
                         <div class="col-xl-8 order-xl-1">
                             <div class="row">
                                 <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-danger border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#pwd-up">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">修改登陆密码</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-lock"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-lock-circle-open icon-ver"></i>&nbsp;定期修改为高强度密码以保护您的账号.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 doudong">
                                     <div class="card bg-gradient-warning border-0">
                                         <!-- Card body -->
                                         <a href="javascript:void(0);" data-toggle="modal" data-target="#sublink-modal">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <span class="h2 font-weight-bold mb-0 text-white">重置TiFANID</span>
+                                                        <span class="h2 font-weight-bold mb-0 text-white">重置订阅</span>
                                                     </div>
                                                     <div class="col-auto">
                                                         <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
@@ -237,6 +259,52 @@
                                                 </div>
                                                 <p class="mt-3 mb-0 text-sm">
                                                     <span class="text-white mr-2"><i class="ni ni-single-copy-04 icon-ver"></i>&nbsp;重置并获取新的订阅地址.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-info border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#telegram">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">绑定TG账号</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-paper-plane-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="mr-2 text-white"><i class="ni ni-send icon-ver"></i>&nbsp;绑定后可加入 Telegram 群组签到等.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-success border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#step2-modal">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">二步验证</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-shield"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-palette icon-ver"></i>&nbsp;为您的帐号添加额外的安全保障.</span>
                                                 </p>
                                             </div>
                                         </a>
