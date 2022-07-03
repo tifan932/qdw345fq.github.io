@@ -326,13 +326,36 @@
 														</p>
 														<div class="form-group">
 														   <select id="protocol-selection" class="form-control">
-														     														     														     <option value="origin">[Trojan] TLS</option>
+														     														     														     <option value="origin">[SS/SSD/SSR 可连接] origin</option>
+														     														     <option value="verify_deflate">[SSR 可连接] verify_deflate</option>
+														     														     <option value="auth_sha1_v4">[SSR 可连接] auth_sha1_v4</option>
+														     														     <option value="auth_sha1_v4_compatible">[SS/SSD/SSR 可连接] auth_sha1_v4_compatible</option>
+														     														     <option value="auth_aes128_sha1">[SSR 可连接] auth_aes128_sha1</option>
+														     														     <option value="auth_aes128_md5">[SSR 可连接] auth_aes128_md5</option>
+														     														     <option value="auth_chain_a">[SSR 可连接] auth_chain_a</option>
+														     														     <option value="auth_chain_b">[SSR 可连接] auth_chain_b</option>
+														     														     <option value="auth_chain_c">[SSR 可连接] auth_chain_c</option>
+														     														     <option value="auth_chain_d">[SSR 可连接] auth_chain_d</option>
+														     														     <option value="auth_chain_e">[SSR 可连接] auth_chain_e</option>
+														     														     <option value="auth_chain_f">[SSR 可连接] auth_chain_f</option>
 														     														   </select>
 														   <br />
 														 
-														   <p>当前混淆方式: <code id="current-obfs">[Trojan] none</code></p>
+														   <p>当前混淆方式: <code id="current-obfs">[SSR 可连接] http_simple</code></p>
 														   <select id="obfs" class="form-control">
 														     														     														     <option value="plain">[SS/SSD/SSR 可连接] plain</option>
+														     														     <option value="http_simple">[SSR 可连接] http_simple</option>
+														     														     <option value="http_simple_compatible">[SS/SSD/SSR 可连接] http_simple_compatible</option>
+														     														     <option value="http_post">[SSR 可连接] http_post</option>
+														     														     <option value="http_post_compatible">[SS/SSD/SSR 可连接] http_post_compatible</option>
+														     														     <option value="tls1.2_ticket_auth">[SSR 可连接] tls1.2_ticket_auth</option>
+														     														     <option value="tls1.2_ticket_auth_compatible">[SS/SSD/SSR 可连接] tls1.2_ticket_auth_compatible</option>
+														     														     <option value="tls1.2_ticket_fastauth">[SSR 可连接] tls1.2_ticket_fastauth</option>
+														     														     <option value="tls1.2_ticket_fastauth_compatible">[SS/SSD/SSR 可连接] tls1.2_ticket_fastauth_compatible</option>
+														     														     <option value="simple_obfs_http">[SS/SSD 可连接] simple_obfs_http</option>
+														     														     <option value="simple_obfs_http_compatible">[SS/SSD/SSR 可连接] simple_obfs_http_compatible</option>
+														     														     <option value="simple_obfs_tls">[SS/SSD 可连接] simple_obfs_tls</option>
+														     														     <option value="simple_obfs_tls_compatible">[SS/SSD/SSR 可连接] simple_obfs_tls_compatible</option>
 														     														   </select>  
 														</div>
 														<p>当前混淆参数: <code id="current-obfs-param"></code></p>
