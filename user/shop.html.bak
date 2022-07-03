@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+  <html lang="zh-CN">
+   <head> 
+    <title>商店 — TiFAN</title> 
+			<meta charset="UTF-8" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	    
+	    <!-- BEGIN: Vendor CSS-->
+	    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.2/css/all.min.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/vendors/css/vendors.min.css">
+	    <!-- END: Vendor CSS-->
+	
+	    <!-- BEGIN: Theme CSS-->
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/bootstrap-extended.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/cool.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/dark-layout.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/style-cyan.css">
+		<!-- END: Theme CSS-->
+	
+	    <!-- BEGIN: Page CSS-->
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/plugins/sweetalert2.min.css">
+	    <!-- END: Page CSS-->
+	</head>
+	<!-- END: Head-->
+	
+	<!-- BEGIN: Body-->
+	<body class="vertical-layout vertical-menu-modern navbar-floating footer-static menu-expanded pace-done" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+	    <!-- BEGIN: Header-->
+	    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+	        <div class="navbar-wrapper">
+	            <div class="navbar-container content">
+	                <div class="navbar-collapse" id="navbar-mobile">
+	                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+		                    <ul class="nav navbar-nav">
+		                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+		                    </ul>
+		                    <ul class="nav navbar-nav bookmark-icons">
+	                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="/user/shop" data-toggle="tooltip" data-placement="top" title="" data-original-title="购买套餐">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+	                            </a></li>
+	                        </ul>
+		                    <ul class="nav navbar-nav bookmark-icons">
+	                            <li class="nav-item d-none d-lg-block"><a class="nav-link"   href="/user/help"  data-toggle="tooltip" data-placement="top" data-original-title="下载与使用教程">
+	                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+	                            </a></li>
+	                        </ul>
+	                    </div>
+	                    <ul class="nav navbar-nav float-right">
+	                        <li class="dropdown dropdown-notification nav-item">
+	                            <a href="#" data-toggle="dropdown" id="tongzhi" class="nav-link notification-toggle nav-link-lg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path></svg>
+	                            </a>
+								<div class="dropdown-menu dropdown-list dropdown-menu-right">
+						          <div class="dropdown-header">温馨提示
+						            						          </div>
+						          <div class="dropdown-list-content dropdown-list-icons">
+						            <a href="/user/announcement" class="dropdown-item dropdown-item-unread">
+						              <div class="dropdown-item-icon bg-primary text-white">
+						                <i class="fas fa-code"></i>
+						              </div>
+						              <div class="dropdown-item-desc">
+						                查看公告日志!
+						                <div class="time text-primary">2022-07-03 09:43:56</div>
+						              </div>
+						            </a>
+						            						            						            						          </div>
+						        </div>
+	                        </li>
+	                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+	                                <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">user</span><span class="user-status">mail@domainname</span></div><span><img class="round" src="/theme/cool/assets/images/tx.png" alt="avatar" height="40" width="40"></span>
+	                            </a>
+	                            <div class="dropdown-menu dropdown-menu-right">
+	                            	<a class="dropdown-item" href="/user/profile"><i class="feather icon-user"></i> 我的账号</a>
+	                            	<a class="dropdown-item" href="/user/code"><i class="feather icon-credit-card""></i> 我的背包</a>
+	                            	<a class="dropdown-item" href="/user/invite"><i class="feather icon-paperclip"></i> 推荐计划</a>
+	                            		                                <div class="dropdown-divider"></div>
+	                                <a class="dropdown-item" href="/user/logout"><i class="feather icon-power"></i> 退出登录</a>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!-- END: Header-->
+	       
+		<!-- BEGIN: Main Menu-->
+	    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+	        <div class="navbar-header">
+	            <ul class="nav navbar-nav flex-row">
+	                <li class="nav-item mr-auto"><a class="navbar-brand" href="/user">
+	                        <img src="/theme/cool/assets/images/logo/logo2.png" style="height: 3rem;">
+	                        <h2 class="brand-text mb-0">TiFAN</h2>
+	                    </a></li>
+	                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-x d-block d-xl-none font-medium-4 primary toggle-icon feather icon-disc"></i><i class="toggle-icon icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary feather" data-ticon="icon-disc"></i></a></li>
+	            </ul>
+	        </div>
+	        <div class="shadow-bottom"></div>
+	        <div class="main-menu-content">
+	            <ul class="navigation navigation-main sidebarnav" data-menu="menu-navigation">
+	                <li class="nav-item"><a href="/user"><i class="feather icon-home"></i><span class="menu-title">首页</span></a></li>
+	                <li class="nav-item"><a href="/user/shop"><i class="feather icon-shopping-cart"></i><span class="menu-title">商店</span></a></li>
+	                
+	                <li class="nav-item navigation-header"><span>我的</span></li>
+	                <li class="nav-item"><a href="/user/profile"><i class="feather icon-user"></i><span class="menu-title">我的账号</span></a></li>
+	                <li class="nav-item"><a href="/user/code"><i class="feather icon-credit-card"></i><span class="menu-title">我的钱包</span></a></li>
+	                
+	                	                
+	                <li class="nav-item"><a href="/user/invite"><i class="feather icon-gift"></i><span class="menu-title">邀请注册</span></a></li>
+	                
+	                <li class="navigation-header"><span>使用</span></li>
+	                	                    <li class="nav-item"><a href="/user/help"><i class="feather icon-layout"></i><span class="menu-title">使用教程</span></a></li>
+	                	                <li class="nav-item"><a href="/user/faq"><i class="feather icon-help-circle"></i><span class="menu-title">常见问题</span></a></li>
+	                
+	                <li class="navigation-header"><span>服务</span></li>
+	                <li class="nav-item"><a href="/user/node"><i class="feather icon-server"></i><span class="menu-title">节点列表</span></a></li>
+	                
+	                	                    <li class="nav-item"><a href="/user/media"><i class="feather icon-airplay"></i><span class="menu-title">流媒体解锁</span></a></li>
+	                	                
+	                	                    <li class="nav-item"><a href="/user/subscribe_log"><i class="feather icon-align-left"></i><span class="menu-title">订阅记录</span></a></li>
+	                	                
+	                	                	<li class="nav-item"><a href="/user/share-account"><i class="feather icon-share-2"></i><span class="menu-title">共享账号</span></a></li>
+	            	 
+	                <li class="nav-item"><a href="/user/edit"><i class="feather icon-settings"></i><span class="menu-title">节点设置</span></a></li>
+	                <li class="nav-item"><a href="/user/ticket"><i class="feather icon-mail"></i><span class="menu-title">工单系统</span></a></li>
+	                
+	                <li class="nav-item navigation-header"><span>审计</span></li>
+	                <li class="nav-item"><a href="/user/detect"><i class="feather icon-shield"></i><span class="menu-title">审计系统</span></a></li>
+	                <li class="nav-item"><a href="/user/detect/log"><i class="feather icon-shield-off"></i><span class="menu-title">审计记录</span></a></li><hr />
+	                
+	            						    <div class="mb-2 hide-sidebar-mini" style="padding: 1rem 2.5rem">
+					        <a href="https://t.me/sakuraquicken" onclick="joinTelegramGroup()" class="btn btn-primary waves-effect waves-light btn-block btn-icon-split">
+					            <i class="fab fa-telegram-plane"></i>&nbsp;&nbsp;加入 Telegram
+					        </a>
+					    </div>
+	            		            	
+	            		            	
+						            </ul>
+	        </div>
+	    </div>
+	    <!-- END: Main Menu-->
+	<link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/page/shop.css">
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-8 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">商店</h2>
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb shop-navigate">
+                                    <li class="breadcrumb-item"><a href="/user">首页</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="/user/shop">商店</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                            </div>
+			<div class="row">
+			
+			                <div class="col-12">
+                    <div class="card offer-box">
+                        <div class="card-body p-0 bg-primary" style="border-radius:10px">
+                            <div class="offer-slider">
+                                <div class="carousel slide">
+                                    <div class="selling-slide row" onclick="window.open('/user/invite','_self')">
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="d-flex">
+                                                <div class="left-content" style="margin-left:1rem">
+                                                    <p>邀请好友注册返现</p>
+                                                                                                            <h2 class="f-w-600" style="color:#FFFFFF;margin:1rem 0 1rem 0">获得TA的充值 <b>20%</b> 的返利</h2>
+                                                                                                        <span class="badge badge-white rounded-pill">满100元</span>
+                                                    <span class="badge badge-dotted rounded-pill ms-2 ">可提现 💰</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-12 shop_img">
+                                            <div class="center-img tada animated"><img class="img-fluid" src="/theme/cool/assets/images/pages/rocket.png"></div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="d-flex">
+                                                <div class="right-content">
+                                                    <p>发送邀请链接给好友🏃</p>
+                    	                                                                                    <h2 class="f-w-600" style="color:#FFFFFF;margin:10px 0 10px 0">您将一次性获得 <b>10GB</b> 奖励</h2>
+                                                                                                                                                                <span class="badge badge-white rounded-pill">TA将获得 <b>1</b> 元奖励作为初始资金</span>
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs border-tab shop_tab" role="tablist" style="border-bottom: 1px solid #dee2e6;">
+                                                            <li class="nav-item">
+                                  <a class="nav-link  active" id="top-home-tab" data-toggle="tab" href="#top-home-50G" aria-controls="home" role="tab" aria-selected="true"><i class="fa fa-ravelry"></i> <span style="word-break: keep-all">50G</span></a>
+                                </li>
+                                                            <li class="nav-item">
+                                  <a class="nav-link " id="top-home-tab" data-toggle="tab" href="#top-home-100G" aria-controls="home" role="tab" aria-selected="true"><i class="fa fa-ravelry"></i> <span style="word-break: keep-all">100G</span></a>
+                                </li>
+                                                            <li class="nav-item">
+                                  <a class="nav-link " id="top-home-tab" data-toggle="tab" href="#top-home-300G" aria-controls="home" role="tab" aria-selected="true"><i class="fa fa-ravelry"></i> <span style="word-break: keep-all">300G</span></a>
+                                </li>
+                                                            <li class="nav-item">
+                                  <a class="nav-link " id="top-home-tab" data-toggle="tab" href="#top-home-2Tb" aria-controls="home" role="tab" aria-selected="true"><i class="fa fa-ravelry"></i> <span style="word-break: keep-all">2Tb</span></a>
+                                </li>
+                                                            <li class="nav-item">
+                                  <a class="nav-link " id="top-home-tab" data-toggle="tab" href="#top-home-618特惠套餐" aria-controls="home" role="tab" aria-selected="true"><i class="fa fa-ravelry"></i> <span style="word-break: keep-all">618特惠套餐</span></a>
+                                </li>
+                                                        
+                                                                    <li class="nav-item">
+                                      <a class="nav-link" id="top-home-tab" data-toggle="tab" href="#top-home-meal" aria-controls="home" role="tab" aria-selected="true"><i class="feather icon-gift"></i> <span style="word-break: keep-all">套餐兑换</span></a>
+                                    </li>
+                                                            </ul>
+                            <div class="tab-content" id="top-tabContent">
+                                                                                            <div class="tab-pane fade  active show" id="top-home-50G" role="tabpanel" aria-labelledby="top-home-tab">
+                                    <div class="row" style="padding: 1.5rem">
+                                        <div class="col-sm-12">
+                                            <div class="tab-content" id="top-tabContent">
+                                                <div class="row">
+                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">50G-VIP1-月付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">6.00</span>
+                                                                        <span class="duration">30天</span>
+                                                                        <span class="badge badge-primary classify">月付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>50 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.1] 会员</b></li>
+                                                                        <li>等级时长: <b>30 天</b></li>
+                                                                        <li>同时在线: <b>3个设备</b></li>
+                                                                        <li>端口速率: <b>260Mbps</b></li>
+                                                                        <li>账号时长: <b>30 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('1',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">50G-VIP1-季付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">18.00</span>
+                                                                        <span class="duration">90天</span>
+                                                                        <span class="badge badge-primary classify">季度</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>150 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.1] 会员</b></li>
+                                                                        <li>等级时长: <b>90 天</b></li>
+                                                                        <li>同时在线: <b>3个设备</b></li>
+                                                                        <li>端口速率: <b>260Mbps</b></li>
+                                                                        <li>账号时长: <b>90 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('2',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">50G-VIP1-半年付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">36.00</span>
+                                                                        <span class="duration">180天</span>
+                                                                        <span class="badge badge-primary classify">半年</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>300 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.1] 会员</b></li>
+                                                                        <li>等级时长: <b>180 天</b></li>
+                                                                        <li>同时在线: <b>3个设备</b></li>
+                                                                        <li>端口速率: <b>260Mbps</b></li>
+                                                                        <li>账号时长: <b>180 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('6',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">50G-VIP1-年付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">62.00</span>
+                                                                        <span class="duration">365天</span>
+                                                                        <span class="badge badge-primary classify">年付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>600 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.1] 会员</b></li>
+                                                                        <li>等级时长: <b>365 天</b></li>
+                                                                        <li>同时在线: <b>3个设备</b></li>
+                                                                        <li>端口速率: <b>260Mbps</b></li>
+                                                                        <li>账号时长: <b>365 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('3',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                            <div class="tab-pane fade " id="top-home-100G" role="tabpanel" aria-labelledby="top-home-tab">
+                                    <div class="row" style="padding: 1.5rem">
+                                        <div class="col-sm-12">
+                                            <div class="tab-content" id="top-tabContent">
+                                                <div class="row">
+                                                
+                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">100G-VIP2-月付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">9.00</span>
+                                                                        <span class="duration">30天</span>
+                                                                        <span class="badge badge-primary classify">月付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>100 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.2] 会员</b></li>
+                                                                        <li>等级时长: <b>30 天</b></li>
+                                                                        <li>同时在线: <b>4个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>30 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('4',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">100G-VIP2-季付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">27.00</span>
+                                                                        <span class="duration">90天</span>
+                                                                        <span class="badge badge-primary classify">季度</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>300 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.2] 会员</b></li>
+                                                                        <li>等级时长: <b>90 天</b></li>
+                                                                        <li>同时在线: <b>4个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>90 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('5',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">100G-VIP2-半年付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">54.00</span>
+                                                                        <span class="duration">180天</span>
+                                                                        <span class="badge badge-primary classify">半年</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>600 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.2] 会员</b></li>
+                                                                        <li>等级时长: <b>180 天</b></li>
+                                                                        <li>同时在线: <b>4个设备</b></li>
+                                                                        <li>端口速率: <b>200Mbps</b></li>
+                                                                        <li>账号时长: <b>180 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('7',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">100G-VIP2-年付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">92.00</span>
+                                                                        <span class="duration">365天</span>
+                                                                        <span class="badge badge-primary classify">年付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>1200 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.2] 会员</b></li>
+                                                                        <li>等级时长: <b>365 天</b></li>
+                                                                        <li>同时在线: <b>4个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>365 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('8',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                            <div class="tab-pane fade " id="top-home-300G" role="tabpanel" aria-labelledby="top-home-tab">
+                                    <div class="row" style="padding: 1.5rem">
+                                        <div class="col-sm-12">
+                                            <div class="tab-content" id="top-tabContent">
+                                                <div class="row">
+                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">300G-VIP3-月付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">18.00</span>
+                                                                        <span class="duration">30天</span>
+                                                                        <span class="badge badge-primary classify">月付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>300 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.3] 会员</b></li>
+                                                                        <li>等级时长: <b>30 天</b></li>
+                                                                        <li>同时在线: <b>6个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>30 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('9',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">300G-VIP3-季付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">54.00</span>
+                                                                        <span class="duration">90天</span>
+                                                                        <span class="badge badge-primary classify">季度</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>900 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.3] 会员</b></li>
+                                                                        <li>等级时长: <b>90 天</b></li>
+                                                                        <li>同时在线: <b>6个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>90 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('10',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">300G-VIP3-半年付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">108.00</span>
+                                                                        <span class="duration">180天</span>
+                                                                        <span class="badge badge-primary classify">半年</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>1800 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.3] 会员</b></li>
+                                                                        <li>等级时长: <b>180 天</b></li>
+                                                                        <li>同时在线: <b>6个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>180 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('11',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">300G-VIP3-年付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">182.00</span>
+                                                                        <span class="duration">365天</span>
+                                                                        <span class="badge badge-primary classify">年付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>3600 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.3] 会员</b></li>
+                                                                        <li>等级时长: <b>365 天</b></li>
+                                                                        <li>同时在线: <b>6个设备</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>365 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('12',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                            <div class="tab-pane fade " id="top-home-2Tb" role="tabpanel" aria-labelledby="top-home-tab">
+                                    <div class="row" style="padding: 1.5rem">
+                                        <div class="col-sm-12">
+                                            <div class="tab-content" id="top-tabContent">
+                                                <div class="row">
+                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="col-md-4 pb-1">
+                                                                <div class="pricing-card p-30 b-primary shadow shadow-showcase">
+                                                                    <span class="badge badge-primary">2Tb-VIP4-月付</span>
+                                    								                                    								                                                                    <br>
+                                                                    <div class="price-value txt-primary" style="position: relative;">
+                                                                        <span class="currency">¥</span>
+                                                                        <span class="amount">99.00</span>
+                                                                        <span class="duration">30天</span>
+                                                                        <span class="badge badge-primary classify">月付</span>
+                                                                    </div>
+                                                                    
+                                                                                                                                                                                                                                                                                <div class="d-flex flex-column w-100">
+                                                                        <span class="font-size-sm text-muted font-weight-bold pb-1">
+                                                                            此商品无限制购买</span>
+                                                                        </span>
+                                                                        <div class="progress progress-md w-100">
+                                                                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <ul class="pricing-content">
+                                                                        <li>套餐流量: <b>2048 GB</b></li>
+                                                                        <li>会员等级: <b>[Lv.4] 会员</b></li>
+                                                                        <li>等级时长: <b>30 天</b></li>
+                                                                        <li>同时在线: <b>无限制</b></li>
+                                                                        <li>端口速率: <b>300Mbps</b></li>
+                                                                        <li>账号时长: <b>30 天</b></li>
+                                                                        <li>重置周期: <b>到期清零</b></li>
+                                                                    </ul>
+                                                                    <div class="text-center mt-3">
+                                                                        <button class="btn btn-primary" type="button" onclick="buy('15',0)">立即订阅</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                            <div class="tab-pane fade " id="top-home-618特惠套餐" role="tabpanel" aria-labelledby="top-home-tab">
+                                    <div class="row" style="padding: 1.5rem">
+                                        <div class="col-sm-12">
+                                            <div class="tab-content" id="top-tabContent">
+                                                <div class="row">
+                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                        
+                                                            <!-- 套餐兑换 -->
+                                <div class="tab-pane fade" id="top-home-meal" role="tabpanel" aria-labelledby="top-home-tab">
+                                        <div class="row" style="padding: 0.5rem">
+                                            <div class="col-sm-12">
+                                                <div class="tab-content" id="top-tabContent">
+                                                    <h3 class="modal-title mb-1"><strong>套餐兑换</strong></h3>
+                                                    <p class="txt-secondary">通过发放的套餐兑换码,可以在此页面兑换成相应套餐<code>（兑换码可通过购买、活动获得）</code></p>
+                                                    <div class="form-group mt-1">
+                                                        <label class="form-control-label h5">兑换码</label>
+                                                        <input type="text" class="form-control" id="code_goods">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info waves-effect" onclick="Readeem()">兑换</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                        
+                        </div>
+                    </div>
+                </div>
+			</div>
+
+				<!--coupon modal-->
+			    <div class="modal fade" id="coupon_modal" tabindex="-1" role="dialog" aria-labelledby="couponModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h4 id="couponModalLabel" class="ls-2">你有优惠码吗?</h4>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				    	<div id="dailymail-modal-body-content"> 
+				    		<p>有的话,请在这里输入</p>
+				    		<p>没有的话, 直接确定吧</p> 
+							<div class="form-group">
+								<label class="form-control-label">输入你的优惠码&nbsp;:&nbsp;</label>
+								<input id="coupon" class="form-control" type="text">
+							</div>	
+						</div>
+				      </div>
+					  <div class="modal-footer">
+		                    <button type="button" class="btn btn-primary" onclick="updateCoupon()">确认提交</button>
+		               </div>
+				    </div>
+				  </div>
+				</div>
+				
+				<!--buy modal-->
+				<div class="modal fade" id="order_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> 
+					<div class="modal-dialog modal-dialog-centered" role="document"> 
+						<div class="modal-content shadow-lg"> 
+							 <div class="modal-header"> 
+							  <h4 class="modal-title kt-font-primary" id="exampleModalLongTitle"><strong>订单确认</strong></h4> 
+							  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        		<span aria-hidden="true">&times;</span>
+				        	  </button>
+							 </div> 
+							 <div class="modal-body"> 
+							    <p><font color="red">如您是更换套餐,那剩余流量和有效期将会重置。</font></p> 
+                                <label class="row col-12 col-form-label" id="shop_name"></label>
+                                <label class="row col-12 col-form-label" id="shop_credit">优惠额度：</label>
+                                <label class="row col-12 col-form-label" id="shop_total"></label>
+                                <label class="row col-12 col-form-label" id="shop_stneed"></label>
+								<fieldset class="checkbox" id="disableo">
+	                                <div class="vs-checkbox-con vs-checkbox-primary">
+	                                    <span>到期时自动续费：</span>
+	                                    <input type="checkbox" id="autorenew">
+	                                    <span class="vs-checkbox">
+	                                        <span class="vs-checkbox--check">
+	                                            <i class="vs-icon feather icon-check"></i>
+	                                        </span>
+	                                    </span>
+	                                </div>
+	                            </fieldset>
+	                            
+	                            <!--pay system-->
+                	            <div class="form-group row form-group-marginless" style="display: none" id="shop_payment">
+                                    <label class="col-lg-12 col-form-label">支付方式：</label>
+                                    <div class="col-lg-12">
+                                    
+                                        <ul class="nav nav-pills row" role="tablist" id="pay_the">
+                                                                                                                                <li class="nav-alipay nav-item d-flex col mb-3 mb-lg-0 cursor_onclick">
+                                                <a class="nav-link border py-10 d-flex flex-grow-1 rounded flex-column align-items-center active" data-toggle="pill" data-name="alipay">
+                                                    <span class="nav-icon py-1 w-auto">
+                                                        <i class="fab fa-alipay icon-2x"></i>
+                                                    </span>
+                                                    <span class="nav-text font-size-lg py-2 font-weight-bold text-center">支付宝</span>
+                                                </a>
+                                            </li>
+                                                                                                                                                                                                                    </ul>
+                                        
+                                    </div>
+                                </div>
+							 </div> 
+							 <div class="modal-footer"> 
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="pay-confirm">确定</button> 
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button> 
+							 </div> 
+						</div> 
+					</div> 
+				</div> 
+				
+								
+								
+									<div class="modal fade" id="coolpay-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> 
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">支付</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div style="text-align: center">
+                                      点击“继续支付”打开支付页面支付<br>
+                                      支付到账需要一段时间,请勿关闭或刷新此页面
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a id="to-coolpay" href="##" class="btn btn-primary">继续支付</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+			</div> 
+		</div>
+    <!-- END: Content-->
+
+    <!-- BEGIN: Footer-->
+			<footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0">
+        	<span class="float-md-left d-block d-md-inline-block mt-25">Copyright &copy; 2022 TiFAN • Powered by <a class="text-bold-800 grey darken-2" href="#" >GangQ</a></span>
+
+	        <button class="btn btn-primary btn-icon scroll-top waves-effect waves-light" type="button" style="margin-bottom: 2.5rem"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+
+    <!-- BEGIN: Vendor JS-->
+	<script src="https://fastly.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="/theme/cool/assets/vendors/js/vendors.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.js"></script>
+	<script src="https://fastly.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+	
+    <!-- BEGIN Vendor JS-->
+    
+    <!-- BEGIN: Theme JS-->
+	<script src="/theme/cool/assets/js/notify.js"></script>
+	<script src="/theme/cool/assets/js/clipboard.min.js"></script>
+	<script src="/theme/cool/assets/js/sweetalert2.min.js"></script>
+	<script src="/theme/cool/assets/js/cool.js?5.5"></script>
+    <!-- END: Theme JS-->
+	  
+	<!-- BEGIN: Page JS-->
+    <script src="/theme/cool/assets/js/core/app.js"></script>
+    <script src="/theme/cool/assets/js/core/app-menu.js"></script>
+	<!-- BEGIN: Page JS-->
+	
+	<!-- Chat -->
+	<!-- Crisp Chat  -->
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8ebe639f-1f9f-412f-bace-1e2321547e71";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>	
+    <script>
+        function importSublink(client) {
+			if (client == 'ssr') {
+			  oneclickImport('ssr', '?sub=1');
+			};
+			if (client == 'clash') {
+			  oneclickImport('clashx','?clash=1')
+			};
+			if (client == 'clashr') {
+			  oneclickImport('clashr','?clash=2')
+			};
+			if (client == 'shadowrocket') {
+			  oneclickImport('shadowrocket','?list=shadowrocket')
+			};
+			if (client == 'quantumult') {
+			  oneclickImport('quantumult','?sub=1')
+			};
+			if (client == 'quantumult_v2') {
+			  oneclickImport('quantumult_v2','?list=quantumult')
+			};
+        }
+    </script>    <!-- END: Footer-->
+	<script src="/theme/cool/assets/js/scripts/jquery.bootstrap-touchspin.js"></script>
+	<script src="/theme/cool/assets/js/scripts/number-input.js"></script>
+	
+    <script>
+        var userMoney = '0.00';
+        var paymentSystem = "cool";
+        var payment = $('.cursor_onclick .active').attr('data-name');
+    	function buy(id,auto) {
+    	    shop = id;
+    	    $("#coupon_modal").modal();
+    	}
+	</script>
+	
+	<script>
+        function nobuy() {
+           Swal.fire({ type: "error",title: '请注意',html: '按量付费不允许购买套餐' });
+    	}
+    	
+    	    </script>
+    
+</body>
+</html>
