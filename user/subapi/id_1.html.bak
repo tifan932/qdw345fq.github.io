@@ -90,8 +90,8 @@
                                             </div>
                                         </div>
                                         <div class="text-center">
-                                            <h1 class="mb-2 text-white">Hi, 提小帆</h1>
-                                            <p class="m-auto w-75">欢迎使用 <strong>Sakura-Quicken</strong>，期待给您带来优秀的网络加速服务</p>
+                                            <h1 class="mb-2 text-white">HELLO</h1>
+                                            <p class="m-auto w-75">欢迎使用 <strong>TiFAN</strong>，期待给您带来优秀的网络加速服务</p>
                                         </div>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@
 			                <div class="card-body">
 			                  <div class="row">
 			                    <div class="col">
-			                    					                      <span class="h3 font-weight-bold mb-0">VIP0<small> 用户</small></span>
+			                    					                      <span class="h3 font-weight-bold mb-0">VIP1<small> 用户</small></span>
 				                      <h5 class="card-title text-uppercase text-muted mb-0" style="font-size: 14px;">到期时间：2022-07-02 17:53:21</h5>
 				                    			                    </div>
 		                        <div class="avatar bg-rgba-primary p-50 m-0">
@@ -119,7 +119,7 @@
 			                <div class="card-body">
 			                  <div class="row">
 			                    <div class="col">
-			                      <span class="h3 font-weight-bold mb-0">0 / ∞</span>
+			                      <span class="h3 font-weight-bold mb-0">∞ / ∞</span>
 			                      <h5 class="card-title text-uppercase text-muted mb-0" style="font-size: 14px;">在线设备</h5>
 			                    </div>
 		                        <div class="avatar bg-rgba-warning p-50 m-0">
@@ -425,19 +425,6 @@
                                     <div class="card-body pt-0">
 	                                    <div class="dropdown">
 	                                    
-                                                	                                        <!-- SS订阅 -->
-        										<div class="btn-group">
-                                                	<button type="button" class="btn btn-ss round waves-effect waves-light copy-text" data-clipboard-text="https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=2"><i class="cool-ss"></i>SS 订阅</button>
-                                                </div>
-    	                                    	                                    
-                                                	                                        <!-- SSR订阅 -->
-    											<div class="btn-group">
-    	                                        	<button type="button" class="btn btn-ssr round dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="cool-ssr"></i>&nbsp;SSR 订阅</button>
-    	                                        	<div class="dropdown-menu dropdown-node dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-14px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-    	                                              <button type="button" class="dropdown-item copy-text" data-clipboard-text="https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=1">复制 SSR 订阅</button>
-    	                                              <button type="button" class="dropdown-item" href="##" onclick="importSublink('ssr')">一键导入 SSR</button>
-    	                                        	</div>
-    	                                        </div>
     	                                    	                                    
                                                                                             <!-- V2ray订阅 -->
         										<div class="btn-group">
@@ -623,58 +610,6 @@ nan%
 	<script src="/theme/cool/assets/vendors/js/charts/apexcharts.min.js"></script>
 	<script src="/theme/cool/assets/vendors/js/charts/flatpickr.min.js"></script>
 	<script src="/theme/cool/assets/vendors/js/charts/chart-apex.js"></script>
-	<script>
-    var donutChartEl = document.querySelector('#donut-chart'),
-        donutChartConfig = {
-            chart: {
-                height: 350,
-                type: 'donut'
-            },
-            legend: {
-                show: true,
-                position: 'bottom'
-            },
-            labels: ['可用', '已用', '今日已用'],
-            series: [
-                <br />
-<b>Warning</b>:  Division by zero in <b>/www/wwwroot/ssrla.de/storage/framework/smarty/compile/9dbc51f623d5821d0dbb4604da1cef2a345742c1_0.file.index.tpl.php</b> on line <b>691</b><br />
-nan,
-                <br />
-<b>Warning</b>:  Division by zero in <b>/www/wwwroot/ssrla.de/storage/framework/smarty/compile/9dbc51f623d5821d0dbb4604da1cef2a345742c1_0.file.index.tpl.php</b> on line <b>693</b><br />
-nan,
-                <br />
-<b>Warning</b>:  Division by zero in <b>/www/wwwroot/ssrla.de/storage/framework/smarty/compile/9dbc51f623d5821d0dbb4604da1cef2a345742c1_0.file.index.tpl.php</b> on line <b>695</b><br />
-nan
-            ],
-            colors: ['#5ED2C0', '#FF9F43', '#EA5455'],
-            dataLabels: {
-                enabled: true,
-                formatter: function(val, opt) {
-                    return parseInt(val) + '%';
-                }
-            },
-            plotOptions: {
-                pie: {
-                    donut: {
-                        labels: {
-                            show: true,
-                            name: {
-                                fontSize: '2rem',
-                                fontFamily: "Nunito",
-                            },
-                            value: {
-                                fontSize: '1rem',
-                                fontFamily: "Nunito",
-                                formatter: function(val) {
-                                    return parseInt(val) + '%';
-                                }
-                            },
-                        }
-                    }
-                }
-            },
-        };
-	</script>
 	
             <script>
                           $("#tos_notify").modal();
