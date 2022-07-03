@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>帮助文档 — Sakura-Quicken</title>
+    		<meta charset="UTF-8" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	    
+	    <!-- BEGIN: Vendor CSS-->
+	    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.2/css/all.min.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/vendors/css/vendors.min.css">
+	    <!-- END: Vendor CSS-->
+	
+	    <!-- BEGIN: Theme CSS-->
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/bootstrap-extended.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/cool.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/dark-layout.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/style-cyan.css">
+		<!-- END: Theme CSS-->
+	
+	    <!-- BEGIN: Page CSS-->
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/plugins/sweetalert2.min.css">
+	    <!-- END: Page CSS-->
+	</head>
+	<!-- END: Head-->
+	
+	<!-- BEGIN: Body-->
+	<body class="vertical-layout vertical-menu-modern navbar-floating footer-static menu-expanded pace-done" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+	    <!-- BEGIN: Header-->
+	    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+	        <div class="navbar-wrapper">
+	            <div class="navbar-container content">
+	                <div class="navbar-collapse" id="navbar-mobile">
+	                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+		                    <ul class="nav navbar-nav">
+		                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+		                    </ul>
+		                    <ul class="nav navbar-nav bookmark-icons">
+	                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="/user/shop" data-toggle="tooltip" data-placement="top" title="" data-original-title="购买套餐">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+	                            </a></li>
+	                        </ul>
+		                    <ul class="nav navbar-nav bookmark-icons">
+	                            <li class="nav-item d-none d-lg-block"><a class="nav-link"   href="/user/help"  data-toggle="tooltip" data-placement="top" data-original-title="下载与使用教程">
+	                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+	                            </a></li>
+	                        </ul>
+	                    </div>
+	                    <ul class="nav navbar-nav float-right">
+	                        <li class="dropdown dropdown-notification nav-item">
+	                            <a href="#" data-toggle="dropdown" id="tongzhi" class="nav-link notification-toggle nav-link-lg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path></svg>
+	                            </a>
+								<div class="dropdown-menu dropdown-list dropdown-menu-right">
+						          <div class="dropdown-header">温馨提示
+						            						          </div>
+						          <div class="dropdown-list-content dropdown-list-icons">
+						            <a href="/user/announcement" class="dropdown-item dropdown-item-unread">
+						              <div class="dropdown-item-icon bg-primary text-white">
+						                <i class="fas fa-code"></i>
+						              </div>
+						              <div class="dropdown-item-desc">
+						                查看公告日志!
+						                <div class="time text-primary"></div>
+						              </div>
+						            </a>
+						            						            						                						            <a href="/user/shop" class="dropdown-item">
+    						              <div class="dropdown-item-icon bg-danger text-white">
+    						                <i class="fas fa-exclamation-triangle"></i>
+    						              </div>
+    						              <div class="dropdown-item-desc">
+    						                您的会员计划已过期，请及时到商店购买。
+    						                <div class="time"></div>
+    						              </div>
+    						            </a>
+						            						            						            						          </div>
+						        </div>
+	                        </li>
+	                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+	                                <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">提小帆</span><span class="user-status">430358126@qq.com</span></div><span><img class="round" src="https://q4.qlogo.cn/g?b=qq&nk=430358126@qq.com&s=3" alt="avatar" height="40" width="40"></span>
+	                            </a>
+	                            <div class="dropdown-menu dropdown-menu-right">
+	                            	<a class="dropdown-item" href="/user/profile"><i class="feather icon-user"></i> 我的账号</a>
+	                            	<a class="dropdown-item" href="/user/code"><i class="feather icon-credit-card""></i> 我的背包</a>
+	                            	<a class="dropdown-item" href="/user/invite"><i class="feather icon-paperclip"></i> 推荐计划</a>
+	                            		                                <div class="dropdown-divider"></div>
+	                                <a class="dropdown-item" href="/user/logout"><i class="feather icon-power"></i> 退出登录</a>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!-- END: Header-->
+	       
+		<!-- BEGIN: Main Menu-->
+	    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+	        <div class="navbar-header">
+	            <ul class="nav navbar-nav flex-row">
+	                <li class="nav-item mr-auto"><a class="navbar-brand" href="/user">
+	                        <div class="brand-logo"></div>
+	                        <h2 class="brand-text mb-0">樱花加速</h2>
+	                    </a></li>
+	                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-x d-block d-xl-none font-medium-4 primary toggle-icon feather icon-disc"></i><i class="toggle-icon icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary feather" data-ticon="icon-disc"></i></a></li>
+	            </ul>
+	        </div>
+	        <div class="shadow-bottom"></div>
+	        <div class="main-menu-content">
+	            <ul class="navigation navigation-main sidebarnav" data-menu="menu-navigation">
+	                <li class="nav-item"><a href="/user"><i class="feather icon-home"></i><span class="menu-title">首页</span></a></li>
+	                <li class="nav-item"><a href="/user/shop"><i class="feather icon-shopping-cart"></i><span class="menu-title">商店</span></a></li>
+	                
+	                <li class="nav-item navigation-header"><span>我的</span></li>
+	                <li class="nav-item"><a href="/user/profile"><i class="feather icon-user"></i><span class="menu-title">我的账号</span></a></li>
+	                <li class="nav-item"><a href="/user/code"><i class="feather icon-credit-card"></i><span class="menu-title">我的钱包</span></a></li>
+	                
+	                	                
+	                <li class="nav-item"><a href="/user/invite"><i class="feather icon-gift"></i><span class="menu-title">邀请注册</span></a></li>
+	                
+	                <li class="navigation-header"><span>使用</span></li>
+	                	                    <li class="nav-item"><a href="/user/help"><i class="feather icon-layout"></i><span class="menu-title">使用教程</span></a></li>
+	                	                <li class="nav-item"><a href="/user/faq"><i class="feather icon-help-circle"></i><span class="menu-title">常见问题</span></a></li>
+	                
+	                <li class="navigation-header"><span>服务</span></li>
+	                <li class="nav-item"><a href="/user/node"><i class="feather icon-server"></i><span class="menu-title">节点列表</span></a></li>
+	                
+	                	                    <li class="nav-item"><a href="/user/media"><i class="feather icon-airplay"></i><span class="menu-title">流媒体解锁</span></a></li>
+	                	                
+	                	                    <li class="nav-item"><a href="/user/subscribe_log"><i class="feather icon-align-left"></i><span class="menu-title">订阅记录</span></a></li>
+	                	                
+	                	                	<li class="nav-item"><a href="/user/share-account"><i class="feather icon-share-2"></i><span class="menu-title">共享账号</span></a></li>
+	            	 
+	                <li class="nav-item"><a href="/user/edit"><i class="feather icon-settings"></i><span class="menu-title">节点设置</span></a></li>
+	                <li class="nav-item"><a href="/user/ticket"><i class="feather icon-mail"></i><span class="menu-title">工单系统</span></a></li>
+	                
+	                <li class="nav-item navigation-header"><span>审计</span></li>
+	                <li class="nav-item"><a href="/user/detect"><i class="feather icon-shield"></i><span class="menu-title">审计系统</span></a></li>
+	                <li class="nav-item"><a href="/user/detect/log"><i class="feather icon-shield-off"></i><span class="menu-title">审计记录</span></a></li><hr />
+	                
+	            						    <div class="mb-2 hide-sidebar-mini" style="padding: 1rem 2.5rem">
+					        <a href="https://t.me/sakuraquicken" onclick="joinTelegramGroup()" class="btn btn-primary waves-effect waves-light btn-block btn-icon-split">
+					            <i class="fab fa-telegram-plane"></i>&nbsp;&nbsp;加入 Telegram
+					        </a>
+					    </div>
+	            		            	
+	            		            	
+						            </ul>
+	        </div>
+	    </div>
+	    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">使用教程</h2>
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/user">使用教程</a>
+                                    </li>
+                                    <li class="breadcrumb-item">Android</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-body">
+                <div class="row">
+                
+                                            <div class="col-lg-3 col-md-5 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">文章列表</h4>
+                                </div>
+                                <hr>
+                                <div class="card-body" style="padding: 0 1rem 1rem 1rem">
+                                        <ul class="list-group list-group-flush">
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/6'">V2rayNG</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/5'">ShadowsocksR</li>
+                                                                                            <li class="list-group-item" onclick="location='/user/help/view/2/4'">Clash for Android</li>
+                                                                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-9 col-md-7 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="my-content">
+                                                                                    <h4 class="card-title mb-1">
+                                                Clash for Android 使用教程
+                                            </h4>
+                                            <p class="mb-2">最后更新于 2022-06-22 22:38:33</p>
+                                                                                        <h2 id="h2-1-"><a name="1." class="reference-link"></a><span class="header-link octicon octicon-link"></span>1.</h2><p>下载 <code>Clash for Android</code> 客户端。</p>
+<p><a href="https://pan.apipi.de/s/8jHo?path=%2FClash" class="btn btn-icon icon-left btn-primary" target="blank"><i class="fas fa-download"></i> 下载客户端</a></p>
+<h2 id="h2-2-"><a name="2." class="reference-link"></a><span class="header-link octicon octicon-link"></span>2.</h2><p>点击这个按钮 👇👇👇</p>
+<p><button type="button" class="btn btn-clash waves-effect waves-light" onclick="importSublink(&#39;clash&#39;)"><i class="cool-clash"></i>  一键导入托管配置到 Clash for Android</button>
+
+</p>
+<h2 id="h2-3-"><a name="3." class="reference-link"></a><span class="header-link octicon octicon-link"></span>3.</h2><p>会到主界面，点击顶部灰色卡片，卡片颜色变成蓝色即代表代理已开启。</p>
+<p>开启后，可在第二个卡片 <code>Proxy</code> 里切换节点。</p>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                                        
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- END: Content-->
+
+    <!-- BEGIN: Footer-->
+    	<footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0">
+        	<span class="float-md-left d-block d-md-inline-block mt-25">Copyright &copy; 2022 Sakura-Quicken • Powered by <a class="text-bold-800 grey darken-2" href="/staff" target="_blank">SSPANEL</a></span>
+        	<!-- 本模板作者 TG号：@Cool_WuKong -->
+        	<span class="float-md-right d-none d-md-block">Theme for<a class="text-bold-800 grey darken-2">Cool</a><i class="feather icon-heart pink"></i></span>
+	        <button class="btn btn-primary btn-icon scroll-top waves-effect waves-light" type="button" style="margin-bottom: 2.5rem"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+
+    <!-- BEGIN: Vendor JS-->
+	<script src="https://fastly.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="/theme/cool/assets/vendors/js/vendors.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.js"></script>
+	<script src="https://fastly.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+	
+    <!-- BEGIN Vendor JS-->
+    
+    <!-- BEGIN: Theme JS-->
+	<script src="/theme/cool/assets/js/notify.js"></script>
+	<script src="/theme/cool/assets/js/clipboard.min.js"></script>
+	<script src="/theme/cool/assets/js/sweetalert2.min.js"></script>
+	<script src="/theme/cool/assets/js/cool.js?5.5"></script>
+    <!-- END: Theme JS-->
+	  
+	<!-- BEGIN: Page JS-->
+    <script src="/theme/cool/assets/js/core/app.js"></script>
+    <script src="/theme/cool/assets/js/core/app-menu.js"></script>
+	<!-- BEGIN: Page JS-->
+	
+	<!-- Chat -->
+	<!-- Crisp Chat  -->
+    <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "1ae3ebbe-7b15-4192-93fd-0a86bc7f22df";
+    CRISP_TOKEN_ID = 'fcb0245e-b36b-3010-b3d7-b07428b54de4';
+    (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+</script>	
+    <script>
+        function importSublink(client) {
+			if (client == 'ssr') {
+			  oneclickImport('ssr', 'https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=1');
+			};
+			if (client == 'clash') {
+			  oneclickImport('clashx','https://ssrla.de/link/NeYkcsb1bywr5VpI?clash=1')
+			};
+			if (client == 'clashr') {
+			  oneclickImport('clashr','https://ssrla.de/link/NeYkcsb1bywr5VpI?clash=2')
+			};
+			if (client == 'shadowrocket') {
+			  oneclickImport('shadowrocket','https://ssrla.de/link/NeYkcsb1bywr5VpI?list=shadowrocket')
+			};
+			if (client == 'quantumult') {
+			  oneclickImport('quantumult','https://ssrla.de/link/NeYkcsb1bywr5VpI?sub=1')
+			};
+			if (client == 'quantumult_v2') {
+			  oneclickImport('quantumult_v2','https://ssrla.de/link/NeYkcsb1bywr5VpI?list=quantumult')
+			};
+        }
+    </script>    <!-- END: Footer-->
+    
+    <script src="https://fastly.jsdelivr.net/npm/editor.md@1.5.0/editormd.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/editor.md@1.5.0/lib/marked.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/editor.md@1.5.0/lib/prettify.min.js"></script>
+    <script>
+    $(function () {
+            editormd.markdownToHTML("my-content");
+    })
+    </script>
+    
+    </body>
+</html>

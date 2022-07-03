@@ -1,0 +1,737 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>我的账号 — Sakura-Quicken</title>
+
+    <!-- C3 chart css -->
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/c3@0.6.8/c3.min.css">
+    		<meta charset="UTF-8" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	    
+	    <!-- BEGIN: Vendor CSS-->
+	    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.8.2/css/all.min.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/vendors/css/vendors.min.css">
+	    <!-- END: Vendor CSS-->
+	
+	    <!-- BEGIN: Theme CSS-->
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/bootstrap-extended.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/cool.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/dark-layout.css">
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/theme/style-cyan.css">
+		<!-- END: Theme CSS-->
+	
+	    <!-- BEGIN: Page CSS-->
+	    <link rel="stylesheet" type="text/css" href="/theme/cool/assets/css/plugins/sweetalert2.min.css">
+	    <!-- END: Page CSS-->
+	</head>
+	<!-- END: Head-->
+	
+	<!-- BEGIN: Body-->
+	<body class="vertical-layout vertical-menu-modern navbar-floating footer-static menu-expanded pace-done" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+	    <!-- BEGIN: Header-->
+	    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+	        <div class="navbar-wrapper">
+	            <div class="navbar-container content">
+	                <div class="navbar-collapse" id="navbar-mobile">
+	                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+		                    <ul class="nav navbar-nav">
+		                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+		                    </ul>
+		                    <ul class="nav navbar-nav bookmark-icons">
+	                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="/user/shop" data-toggle="tooltip" data-placement="top" title="" data-original-title="购买套餐">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+	                            </a></li>
+	                        </ul>
+		                    <ul class="nav navbar-nav bookmark-icons">
+	                            <li class="nav-item d-none d-lg-block"><a class="nav-link"   href="/user/help"  data-toggle="tooltip" data-placement="top" data-original-title="下载与使用教程">
+	                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+	                            </a></li>
+	                        </ul>
+	                    </div>
+	                    <ul class="nav navbar-nav float-right">
+	                        <li class="dropdown dropdown-notification nav-item">
+	                            <a href="#" data-toggle="dropdown" id="tongzhi" class="nav-link notification-toggle nav-link-lg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path></svg>
+	                            </a>
+								<div class="dropdown-menu dropdown-list dropdown-menu-right">
+						          <div class="dropdown-header">温馨提示
+						            						          </div>
+						          <div class="dropdown-list-content dropdown-list-icons">
+						            <a href="/user/announcement" class="dropdown-item dropdown-item-unread">
+						              <div class="dropdown-item-icon bg-primary text-white">
+						                <i class="fas fa-code"></i>
+						              </div>
+						              <div class="dropdown-item-desc">
+						                查看公告日志!
+						                <div class="time text-primary">2022-07-03 10:02:58</div>
+						              </div>
+						            </a>
+						            						            						                						            <a href="/user/shop" class="dropdown-item">
+    						              <div class="dropdown-item-icon bg-danger text-white">
+    						                <i class="fas fa-exclamation-triangle"></i>
+    						              </div>
+    						              <div class="dropdown-item-desc">
+    						                您的会员计划已过期，请及时到商店购买。
+    						                <div class="time">2022-07-03 10:02:58</div>
+    						              </div>
+    						            </a>
+						            						            						            						          </div>
+						        </div>
+	                        </li>
+	                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+	                                <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">提小帆</span><span class="user-status">430358126@qq.com</span></div><span><img class="round" src="https://q4.qlogo.cn/g?b=qq&nk=430358126@qq.com&s=3" alt="avatar" height="40" width="40"></span>
+	                            </a>
+	                            <div class="dropdown-menu dropdown-menu-right">
+	                            	<a class="dropdown-item" href="/user/profile"><i class="feather icon-user"></i> 我的账号</a>
+	                            	<a class="dropdown-item" href="/user/code"><i class="feather icon-credit-card""></i> 我的背包</a>
+	                            	<a class="dropdown-item" href="/user/invite"><i class="feather icon-paperclip"></i> 推荐计划</a>
+	                            		                                <div class="dropdown-divider"></div>
+	                                <a class="dropdown-item" href="/user/logout"><i class="feather icon-power"></i> 退出登录</a>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!-- END: Header-->
+	       
+		<!-- BEGIN: Main Menu-->
+	    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+	        <div class="navbar-header">
+	            <ul class="nav navbar-nav flex-row">
+	                <li class="nav-item mr-auto"><a class="navbar-brand" href="/user">
+	                        <div class="brand-logo"></div>
+	                        <h2 class="brand-text mb-0">樱花加速</h2>
+	                    </a></li>
+	                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-x d-block d-xl-none font-medium-4 primary toggle-icon feather icon-disc"></i><i class="toggle-icon icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary feather" data-ticon="icon-disc"></i></a></li>
+	            </ul>
+	        </div>
+	        <div class="shadow-bottom"></div>
+	        <div class="main-menu-content">
+	            <ul class="navigation navigation-main sidebarnav" data-menu="menu-navigation">
+	                <li class="nav-item"><a href="/user"><i class="feather icon-home"></i><span class="menu-title">首页</span></a></li>
+	                <li class="nav-item"><a href="/user/shop"><i class="feather icon-shopping-cart"></i><span class="menu-title">商店</span></a></li>
+	                
+	                <li class="nav-item navigation-header"><span>我的</span></li>
+	                <li class="nav-item"><a href="/user/profile"><i class="feather icon-user"></i><span class="menu-title">我的账号</span></a></li>
+	                <li class="nav-item"><a href="/user/code"><i class="feather icon-credit-card"></i><span class="menu-title">我的钱包</span></a></li>
+	                
+	                	                
+	                <li class="nav-item"><a href="/user/invite"><i class="feather icon-gift"></i><span class="menu-title">邀请注册</span></a></li>
+	                
+	                <li class="navigation-header"><span>使用</span></li>
+	                	                    <li class="nav-item"><a href="/user/help"><i class="feather icon-layout"></i><span class="menu-title">使用教程</span></a></li>
+	                	                <li class="nav-item"><a href="/user/faq"><i class="feather icon-help-circle"></i><span class="menu-title">常见问题</span></a></li>
+	                
+	                <li class="navigation-header"><span>服务</span></li>
+	                <li class="nav-item"><a href="/user/node"><i class="feather icon-server"></i><span class="menu-title">节点列表</span></a></li>
+	                
+	                	                    <li class="nav-item"><a href="/user/media"><i class="feather icon-airplay"></i><span class="menu-title">流媒体解锁</span></a></li>
+	                	                
+	                	                    <li class="nav-item"><a href="/user/subscribe_log"><i class="feather icon-align-left"></i><span class="menu-title">订阅记录</span></a></li>
+	                	                
+	                	                	<li class="nav-item"><a href="/user/share-account"><i class="feather icon-share-2"></i><span class="menu-title">共享账号</span></a></li>
+	            	 
+	                <li class="nav-item"><a href="/user/edit"><i class="feather icon-settings"></i><span class="menu-title">节点设置</span></a></li>
+	                <li class="nav-item"><a href="/user/ticket"><i class="feather icon-mail"></i><span class="menu-title">工单系统</span></a></li>
+	                
+	                <li class="nav-item navigation-header"><span>审计</span></li>
+	                <li class="nav-item"><a href="/user/detect"><i class="feather icon-shield"></i><span class="menu-title">审计系统</span></a></li>
+	                <li class="nav-item"><a href="/user/detect/log"><i class="feather icon-shield-off"></i><span class="menu-title">审计记录</span></a></li><hr />
+	                
+	            						    <div class="mb-2 hide-sidebar-mini" style="padding: 1rem 2.5rem">
+					        <a href="https://t.me/sakuraquicken" onclick="joinTelegramGroup()" class="btn btn-primary waves-effect waves-light btn-block btn-icon-split">
+					            <i class="fab fa-telegram-plane"></i>&nbsp;&nbsp;加入 Telegram
+					        </a>
+					    </div>
+	            		            	
+	            		            	
+						            </ul>
+	        </div>
+	    </div>
+	    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">我的账号</h2>
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/user">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="/user/profile">Account</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <!-- account setting page start -->
+                <section id="page-account-settings">
+                    <div class="row">
+                        <!-- left menu section -->
+                        <div class="col-xl-4 order-xl-2">
+                            <div class="card card-profile">
+                                <img src="/theme/cool/assets/images/user-info.jpg" alt="Image placeholder" class="card-img-top">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3 order-lg-2">
+                                        <div class="card-profile-image">
+                                            <a href="#">
+                                                <img src="/theme/cool/assets/images/images.png" class="rounded-circle">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                                    <a href="/user/node" class="btn btn-sm btn-info mr-4">查看节点</a>
+                                    <a href="/user/shop" class="btn btn-sm btn-primary  float-right">前往商店</a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-profile-stats d-flex justify-content-center">
+                                                <div>
+                                                    <span class="heading">Lv.0</span>
+                                                    <span class="description">Class</span>
+                                                </div>
+                                                <div>
+                                                    <span class="heading">0.00</span>
+                                                    <span class="description">Money</span>
+                                                </div>
+                                                <div>
+                                                    <span class="heading">0B</span>
+                                                    <span class="description">Traffic</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h5 class="h3" style="padding:0.8em">提小帆</h5>
+                                        <a class="btn btn-sm btn-danger" style="color:white" data-toggle="modal" data-target="#delete-account-modal">删除账号</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 order-xl-1">
+                            <div class="row">
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-danger border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#pwd-up">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">修改登陆密码</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-lock"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-lock-circle-open icon-ver"></i>&nbsp;定期修改为高强度密码以保护您的账号.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-warning border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#sublink-modal">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">重置订阅</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-link"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-single-copy-04 icon-ver"></i>&nbsp;重置并获取新的订阅地址.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-info border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#telegram">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">绑定TG账号</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-paper-plane-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="mr-2 text-white"><i class="ni ni-send icon-ver"></i>&nbsp;绑定后可加入 Telegram 群组签到等.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-success border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#step2-modal">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">二步验证</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-shield"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-palette icon-ver"></i>&nbsp;为您的帐号添加额外的安全保障.</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-primary border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#dailymail-modal">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">每日邮件提醒设置</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-envelope-o"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-email-83 icon-ver"></i>&nbsp;当前的设置&nbsp;:&nbsp;不发送</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 doudong">
+                                    <div class="card bg-gradient-dark border-0">
+                                        <!-- Card body -->
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#unblock-ip">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span class="h2 font-weight-bold mb-0 text-white">IP 解封</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="icon icon-shape bg-white text-dark rounded-circle shadow">
+                                                            <i class="fa fa-power-off"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="mt-3 mb-0 text-sm">
+                                                    <span class="text-white mr-2"><i class="ni ni-button-power icon-ver"></i>&nbsp;当前的IP: &nbsp;45.11.104.69 没有被封</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- account setting page end -->
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>最近五分钟使用IP</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>请确认都为自己的<code>IP</code>，如有异常请及时<code>修改密码</code></p>
+                            <div class="table-responsive">
+                                <table class="table table-hover-animation mb-0"> 
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">IP</th>
+                                            <th scope="col">归属地</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                    <tr class="shadow-sm">
+                                                <td colspan="2"><strong>最近5分钟未使用服务</strong></td>
+                                            </tr>
+                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>登录记录</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>请确认都为自己的<code>IP</code>，如有异常请及时<code>修改密码</code></p>
+                            <div class="table-responsive">
+                                <table class="table table-hover-animation mb-0"> 
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">IP</th>
+                                            <th scope="col">归属地</th>
+                                            <th scope="col">登录时间</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                                                        <tr class="shadow-sm">
+                                            <td>45.11.104.69</td>
+                                            <td>欧盟</td>
+                                            <td>2022-07-03 09:19:04</td>
+                                        </tr>
+                                                                                <tr class="shadow-sm">
+                                            <td>108.166.216.214</td>
+                                            <td>美国加利福尼亚州洛杉矶MULTACOM数据中心</td>
+                                            <td>2022-07-02 17:53:21</td>
+                                        </tr>
+                                                                                                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card-->
+                </div>
+            </div>
+            <!--row-->
+        </div>
+    </div>
+
+    <!-- pass Modal -->
+    <div class="modal fade" id="pwd-up" tabindex="-1" role="dialog" aria-labelledby="pwd-upModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="pwd-upModalLabel">修改密码</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form class="form-horizontal" id="user_profile_password_update">
+                    <div class="modal-body">
+                        <!-- Card body -->
+                        <div class="form-group">
+                            <label>当前密码:</label>
+                            <input id="oldpwd" class="form-control" type="password" placeholder="Old passwd">
+                        </div>
+                        <div class="form-group">
+                            <label>新密码:</label>
+                            <input id="pwd" class="form-control" type="password" placeholder="New passwd">
+                        </div>
+                        <div class="form-group">
+                            <label>重复新密码</label>
+                            <input id="repwd" class="form-control" type="password" placeholder="RE New passwd">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button id="pwd-update" type="button" class="btn btn-primary">确认提交</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- telegram  Modal -->
+    <div class="modal fade" id="telegram" tabindex="-1" role="dialog" aria-labelledby="telegramModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="telegramModalLabel">Telegram</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                                                            <div class="modal-body">
+                        <span>
+                            <h4 class="card-title"><span>1</span>&nbsp;&nbsp;使用快捷命令绑定</h4>
+                        </span>
+                        <span>- 在 Telegram 添加机器人账号 <a href="https://t.me/Sakuracloud_bot" target="_blank">@Sakuracloud_bot</a></span>
+                        <br /><br />
+                        <span>- 发送命令 <code class="cursor_onclick copy-modal" data-clipboard-text="/start k64O6lO7Kg5pyY8g">/start k64O6lO7Kg5pyY8g</code> 给机器人</span>
+                        <br /><br />
+                        <span>
+                            <h4 class="card-title"><span>2</span>&nbsp;&nbsp;当前设备一键绑定</h4>
+                        </span>
+                        <div class="col-12 kt-align-center">
+                            <a href="https://t.me/Sakuracloud_bot?start=k64O6lO7Kg5pyY8g" target="_blank" class="btn btn-info"><i class="fa fa-telegram"></i> 一键绑定 Telegram</a>
+                        </div>
+                        <br />
+                        <p><code>- 请注意: Telegram 需要翻墙才能使用</code></p>
+
+                        <p>- 使用以上其中一种方式进行绑定 Telegram 账号</p>
+
+                        <p>- 绑定成功后机器人将回复您当前绑定的账号。</p>
+
+                        <p>- 在聊天输入框发送 <code>/start</code></p>
+
+                        <p>- 开始使用 Telegram 功能</p>
+                    </div>
+                                                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ssrlink Modal -->
+    <div class="modal fade" id="sublink-modal" tabindex="-1" role="dialog" aria-labelledby="wechat-upModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="sublink-upModalLabel">重置订阅</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <p class="kt-callout__desc">重置节点订阅链接后，原订阅链接将失效，并生成新的订阅链接</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="sublink-reset" type="button" class="btn btn-primary">立即重置</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- step2 Modal -->
+        <div class="modal fade" id="step2-modal" tabindex="-1" role="dialog" aria-labelledby="step2-upModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 id="step2-upModalLabel">二步验证</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><code>请使用二步验证APP扫描二维码，推荐使用 Google Authenticator</code></p>
+                        <div id="ga-qr" style="text-align: center"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#step2-2-modal">下一步</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="step2-2-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><strong>验证动态码</strong></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>确认动态码：</label>
+                            <input class="form-control" type="number" id="ga-code" name="ga-code" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="ga-enable-true">确定开启</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- 每日邮件 -->
+    <div class="modal fade" id="dailymail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>每日邮件设置</strong></h5>
+                </div>
+                <div class="modal-body" id="dailymail-modal-body">
+                    <div id="dailymail-modal-body-content">
+                        <p>开启后您将在每日0点接收到您账户当前流量使用情况和公告信息，并且您可在最新接收到的邮件下方链接进入最新的官网链接</p>
+                        <p>当前状态：<code>不发送</code></p>
+                        <p> </p>
+                        <div class="form-group">
+                            <label>修改状态</label>
+                            <select class="form-control" id="dailymail">
+                                                                <option value="1">我需要接收每日邮件</option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="user_profile_dailymail">保存更改</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- unblock IP Modal -->
+    <div class="modal fade" id="unblock-ip" tabindex="-1" role="dialog" aria-labelledby="unblock-ipModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="unblock-ipModalLabel">解封IP</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="description">当前状态&nbsp;:&nbsp;<span id="ajax-block">45.11.104.69 没有被封</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="unblock" type="button" class="btn btn-primary">提交解封</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- 删除账号 -->
+    <div class="modal fade" id="delete-account-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>删除账号</strong></h5>
+                </div>
+                <form class="kt-form" id="user_profile_delete_account">
+                    <div class="modal-body">
+                        <p class="text-danger">注意：您的所有数据都会被永久删除，并且无法找回。</p>
+                        <p class="text-danger">请谨慎操作！请谨慎操作！请谨慎操作！</p>
+                        <div class="form-group">
+                            <label>账号密码确认</label>
+                            <div class="input-group">
+                                <input class="form-control" type="password" id="delete_passwd" name="delete_passwd" />
+                                <div class="input-group-append cursor_onclick delete_passwd-password">
+                                    <span class="input-group-text"><i class="fa fa-eye-slash" id="delete_passwd-none"></i><i class="fa fa-eye" id="delete_passwd-show" style="display: none"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="kill">确定删除</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <!-- BEGIN: Footer-->
+    	<footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0">
+        	<span class="float-md-left d-block d-md-inline-block mt-25">Copyright &copy; 2022 Sakura-Quicken • Powered by <a class="text-bold-800 grey darken-2" href="/staff" target="_blank">SSPANEL</a></span>
+        	<!-- 本模板作者 TG号：@Cool_WuKong -->
+        	<span class="float-md-right d-none d-md-block">Theme for<a class="text-bold-800 grey darken-2">Cool</a><i class="feather icon-heart pink"></i></span>
+	        <button class="btn btn-primary btn-icon scroll-top waves-effect waves-light" type="button" style="margin-bottom: 2.5rem"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+
+    <!-- BEGIN: Vendor JS-->
+	<script src="https://fastly.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="/theme/cool/assets/vendors/js/vendors.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.js"></script>
+	<script src="https://fastly.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+	
+    <!-- BEGIN Vendor JS-->
+    
+    <!-- BEGIN: Theme JS-->
+	<script src="/theme/cool/assets/js/notify.js"></script>
+	<script src="/theme/cool/assets/js/clipboard.min.js"></script>
+	<script src="/theme/cool/assets/js/sweetalert2.min.js"></script>
+	<script src="/theme/cool/assets/js/cool.js?5.5"></script>
+    <!-- END: Theme JS-->
+	  
+	<!-- BEGIN: Page JS-->
+    <script src="/theme/cool/assets/js/core/app.js"></script>
+    <script src="/theme/cool/assets/js/core/app-menu.js"></script>
+	<!-- BEGIN: Page JS-->
+	
+	<!-- Chat -->
+	<!-- Crisp Chat  -->
+    <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "1ae3ebbe-7b15-4192-93fd-0a86bc7f22df";
+    CRISP_TOKEN_ID = 'fcb0245e-b36b-3010-b3d7-b07428b54de4';
+    (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+</script>	
+    <script>
+        function importSublink(client) {
+			if (client == 'ssr') {
+			  oneclickImport('ssr', '?sub=1');
+			};
+			if (client == 'clash') {
+			  oneclickImport('clashx','?clash=1')
+			};
+			if (client == 'clashr') {
+			  oneclickImport('clashr','?clash=2')
+			};
+			if (client == 'shadowrocket') {
+			  oneclickImport('shadowrocket','?list=shadowrocket')
+			};
+			if (client == 'quantumult') {
+			  oneclickImport('quantumult','?sub=1')
+			};
+			if (client == 'quantumult_v2') {
+			  oneclickImport('quantumult_v2','?list=quantumult')
+			};
+        }
+    </script>    <!-- END: Footer-->
+
+        <script type="text/javascript" src="/theme/cool/assets/js/scripts/jquery.qrcode.min.js"></script>
+    <script>
+        var ga_qr_text = 'otpauth://totp/Sakura-Quicken-%E6%8F%90%E5%B0%8F%E5%B8%86-%E4%B8%A4%E6%AD%A5%E9%AA%8C%E8%AF%81%E7%A0%81?secret=JF5Y23QOZEF6YEO3';
+        // 二步验证 二维码
+        jQuery('#ga-qr').qrcode({
+            "text": ga_qr_text
+        });
+    </script>
+    
+    </body>
+</html>
