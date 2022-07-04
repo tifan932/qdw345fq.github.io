@@ -220,7 +220,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" id="ticket-create-click">确定</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
                     </div>
                 </form>
             </div>
