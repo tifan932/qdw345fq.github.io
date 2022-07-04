@@ -229,38 +229,11 @@
 											        <hr />
 													<div class="body" id="method-confirm-body"> 
 											           <p>SS/SSD/SSR 支持的加密方式有所不同<br />请根据实际情况来进行选择<br /><br />
-											             当前加密方式: <code id="current-method">[SS/SSR 可连接] chacha20</code>
+											             当前加密方式: <code id="current-method">none</code>
 											           </p>
 											           <div class="form-group">
 											             <select id="method-select" class="form-control">
-											               											               											               <option value="rc4-md5">[SS/SSR 可连接] rc4-md5</option>
-											               											               <option value="rc4-md5-6">[SS/SSR 可连接] rc4-md5-6</option>
-											               											               <option value="aes-128-cfb">[SS/SSR 可连接] aes-128-cfb</option>
-											               											               <option value="aes-192-cfb">[SS/SSR 可连接] aes-192-cfb</option>
-											               											               <option value="aes-256-cfb">[SS/SSR 可连接] aes-256-cfb</option>
-											               											               <option value="aes-128-ctr">[SS/SSR 可连接] aes-128-ctr</option>
-											               											               <option value="aes-192-ctr">[SS/SSR 可连接] aes-192-ctr</option>
-											               											               <option value="aes-256-ctr">[SS/SSR 可连接] aes-256-ctr</option>
-											               											               <option value="camellia-128-cfb">[SS/SSR 可连接] camellia-128-cfb</option>
-											               											               <option value="camellia-192-cfb">[SS/SSR 可连接] camellia-192-cfb</option>
-											               											               <option value="camellia-256-cfb">[SS/SSR 可连接] camellia-256-cfb</option>
-											               											               <option value="bf-cfb">[SS/SSR 可连接] bf-cfb</option>
-											               											               <option value="cast5-cfb">[SS/SSR 可连接] cast5-cfb</option>
-											               											               <option value="des-cfb">[SS/SSR 可连接] des-cfb</option>
-											               											               <option value="des-ede3-cfb">[SS/SSR 可连接] des-ede3-cfb</option>
-											               											               <option value="idea-cfb">[SS/SSR 可连接] idea-cfb</option>
-											               											               <option value="rc2-cfb">[SS/SSR 可连接] rc2-cfb</option>
-											               											               <option value="seed-cfb">[SS/SSR 可连接] seed-cfb</option>
-											               											               <option value="salsa20">[SS/SSR 可连接] salsa20</option>
-											               											               <option value="chacha20">[SS/SSR 可连接] chacha20</option>
-											               											               <option value="xsalsa20">[SS/SSR 可连接] xsalsa20</option>
-											               											               <option value="chacha20-ietf">[SS/SSR 可连接] chacha20-ietf</option>
-											               											               <option value="aes-128-gcm">[SS/SSD 可连接] aes-128-gcm</option>
-											               											               <option value="aes-192-gcm">[SS/SSD 可连接] aes-192-gcm</option>
-											               											               <option value="none">[SS/SSR 可连接] none</option>
-											               											               <option value="aes-256-gcm">[SS/SSD 可连接] aes-256-gcm</option>
-											               											               <option value="chacha20-ietf-poly1305">[SS/SSD 可连接] chacha20-ietf-poly1305</option>
-											               											               <option value="xchacha20-ietf-poly1305">[SS/SSD 可连接] xchacha20-ietf-poly1305</option>
+											               											               											               <option value="rc4-md5">none</option>
 											               											             </select>
 											           </div>
 											        </div> 
@@ -322,46 +295,13 @@
 											         <div class="modal-body" id="protocol-obfs-modal-body"> 
 														<p>如果需要兼容 SS/SSD 请设置为 origin 或 <br />选择带_compatible的兼容选项<br />
 														 auth_chain 系为实验性协议，可能造成不稳定或无法使用，开启前请询问是否支持<br /><br />
-														 当前协议: <code id="current-protocol">[SSR 可连接] auth_aes128_sha1</code>
+														 当前协议: <code id="current-protocol">tls</code>
 														</p>
 														<div class="form-group">
 														   <select id="protocol-selection" class="form-control">
-														     														     														     <option value="origin">[SS/SSD/SSR 可连接] origin</option>
-														     														     <option value="verify_deflate">[SSR 可连接] verify_deflate</option>
-														     														     <option value="auth_sha1_v4">[SSR 可连接] auth_sha1_v4</option>
-														     														     <option value="auth_sha1_v4_compatible">[SS/SSD/SSR 可连接] auth_sha1_v4_compatible</option>
-														     														     <option value="auth_aes128_sha1">[SSR 可连接] auth_aes128_sha1</option>
-														     														     <option value="auth_aes128_md5">[SSR 可连接] auth_aes128_md5</option>
-														     														     <option value="auth_chain_a">[SSR 可连接] auth_chain_a</option>
-														     														     <option value="auth_chain_b">[SSR 可连接] auth_chain_b</option>
-														     														     <option value="auth_chain_c">[SSR 可连接] auth_chain_c</option>
-														     														     <option value="auth_chain_d">[SSR 可连接] auth_chain_d</option>
-														     														     <option value="auth_chain_e">[SSR 可连接] auth_chain_e</option>
-														     														     <option value="auth_chain_f">[SSR 可连接] auth_chain_f</option>
+														     														     														     <option value="origin">tls</option>
 														     														   </select>
-														   <br />
-														 
-														   <p>当前混淆方式: <code id="current-obfs">[SSR 可连接] http_simple</code></p>
-														   <select id="obfs" class="form-control">
-														     														     														     <option value="plain">[SS/SSD/SSR 可连接] plain</option>
-														     														     <option value="http_simple">[SSR 可连接] http_simple</option>
-														     														     <option value="http_simple_compatible">[SS/SSD/SSR 可连接] http_simple_compatible</option>
-														     														     <option value="http_post">[SSR 可连接] http_post</option>
-														     														     <option value="http_post_compatible">[SS/SSD/SSR 可连接] http_post_compatible</option>
-														     														     <option value="tls1.2_ticket_auth">[SSR 可连接] tls1.2_ticket_auth</option>
-														     														     <option value="tls1.2_ticket_auth_compatible">[SS/SSD/SSR 可连接] tls1.2_ticket_auth_compatible</option>
-														     														     <option value="tls1.2_ticket_fastauth">[SSR 可连接] tls1.2_ticket_fastauth</option>
-														     														     <option value="tls1.2_ticket_fastauth_compatible">[SS/SSD/SSR 可连接] tls1.2_ticket_fastauth_compatible</option>
-														     														     <option value="simple_obfs_http">[SS/SSD 可连接] simple_obfs_http</option>
-														     														     <option value="simple_obfs_http_compatible">[SS/SSD/SSR 可连接] simple_obfs_http_compatible</option>
-														     														     <option value="simple_obfs_tls">[SS/SSD 可连接] simple_obfs_tls</option>
-														     														     <option value="simple_obfs_tls_compatible">[SS/SSD/SSR 可连接] simple_obfs_tls_compatible</option>
-														     														   </select>  
 														</div>
-														<p>当前混淆参数: <code id="current-obfs-param"></code></p>
-										                <div class="form-group">
-										                  <input id="obfs-param" type="text" class="form-control" placeholder="请输入混淆参数" aria-label="">
-										                </div>
 								                    	<div class="col-13 d-flex flex-sm-row flex-column justify-content-end">
 								                    		<button id="protocol-obfs-confirm" class="btn btn-primary">提交更改</button>
 								                    	</div>
