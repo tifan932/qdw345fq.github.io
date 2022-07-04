@@ -191,9 +191,9 @@
 										          <div class="node-body">
     										                                                                          <main class="cool-drag">
                                                                 <label>账号：</label>
-                                                                <div class="cool-item"> <span class="text-primary">y631t75@icloud.com</span> </div>
+                                                                <div class="cool-item">该账号仅 <span class="text-primary">会员[LV.1]</span> 及以上会员可用</div>
                                                                 <label>密码：</label>
-                                                                <div class="cool-item" style="margin-bottom:20px"> <span class="text-primary">Chipslink123</span> </div>
+                                                                <div class="cool-item" style="margin-bottom:20px">该账号仅 <span class="text-primary">会员[LV.1]</span> 及以上会员可用</div>
                                                             </main>
     										              										          </div>
 										        </div>
@@ -207,9 +207,9 @@
 										          <div class="node-body">
     										                                                                          <main class="cool-drag">
                                                                 <label>账号：</label>
-                                                                <div class="cool-item">采购中，敬请期待...</div>
+                                                                <div class="cool-item">该账号仅 <span class="text-primary">会员[LV.3]</span> 及以上会员可用</div>
                                                                 <label>密码：</label>
-                                                                <div class="cool-item" style="margin-bottom:20px">采购中，敬请期待...</div>
+                                                                <div class="cool-item" style="margin-bottom:20px">该账号仅 <span class="text-primary">会员[LV.3]</span> 及以上会员可用</div>
                                                             </main>
     										              										          </div>
 										        </div>
@@ -218,14 +218,14 @@
 										        <div class="card" style="box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important">
 										          <div class="card-header text-center">
 										            <img class="img-fluid" src="/theme/cool/assets/images/share/hbo.png">
-										            <h3 class="f-w-600 mt-1 mb-1" style="margin: auto;">HBO</h3>
+										            <h3 class="f-w-600 mt-1 mb-1" style="margin: auto;">HBO暂不提供</h3>
 										          </div>
 										          <div class="node-body">
     										                                                                          <main class="cool-drag">
                                                                 <label>账号：</label>
-                                                                <div class="cool-item">采购中，敬请期待...</div>
+                                                                <div class="cool-item">该账号仅 <span class="text-primary">会员[LV.3]</span> 及以上会员可用</div>
                                                                 <label>密码：</label>
-                                                                <div class="cool-item" style="margin-bottom:20px">采购中，敬请期待...</div>
+                                                                <div class="cool-item" style="margin-bottom:20px">该账号仅 <span class="text-primary">会员[LV.3]</span> 及以上会员可用</div>
                                                             </main>
     										              										          </div>
 										        </div>
@@ -234,14 +234,14 @@
 										        <div class="card" style="box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important">
 										          <div class="card-header text-center">
 										            <img class="img-fluid" src="/theme/cool/assets/images/share/hulu.png">
-										            <h3 class="f-w-600 mt-1 mb-1" style="margin: auto;">Hulu</h3>
+										            <h3 class="f-w-600 mt-1 mb-1" style="margin: auto;">Hulu暂不提供</h3>
 										          </div>
 										          <div class="node-body">
     										                                                                          <main class="cool-drag">
                                                                 <label>账号：</label>
-                                                                <div class="cool-item">采购中，敬请期待...</div>
+                                                                <div class="cool-item">该账号仅 <span class="text-primary">会员[LV.3]</span> 及以上会员可用</div>
                                                                 <label>密码：</label>
-                                                                <div class="cool-item" style="margin-bottom:20px">采购中，敬请期待...</div>
+                                                                <div class="cool-item" style="margin-bottom:20px">该账号仅 <span class="text-primary">会员[LV.3]</span> 及以上会员可用</div>
                                                             </main>
     										              										          </div>
 										        </div>
