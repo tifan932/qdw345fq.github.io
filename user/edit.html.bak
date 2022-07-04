@@ -173,6 +173,10 @@
                     <div class="row">
                         <div class="col-md-3 mb-2 mb-md-0">
                             <ul class="nav nav-pills flex-column mt-md-0 mt-1">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex py-75 active" id="password-tab" data-toggle="pill" href="#password" aria-expanded="true">
+                                        <i class="feather icon-globe mr-50 font-medium-3"></i>连接密码</a>
+                                </li>
                                 
                                 	                                <li class="nav-item">
 	                                    <a class="nav-link d-flex py-75" id="method-tab" data-toggle="pill" href="#method" aria-expanded="false">
@@ -193,6 +197,30 @@
                                 <div class="card-content">
                                     <div class="card-body">
                                         <div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="password" aria-labelledby="password-tab" aria-expanded="true">
+							                    <div class="card">
+													<div class="header"> 
+											          <h5 class="title"><strong>连接密码</strong></h5> 
+											        </div>
+											        <hr />
+													<div class="body" id="ss-pwd-body"> 
+														<p>您需要了解的是修改此密码同时也会变更您 V2Ray 节点的 UUID，请注意及时更新托管订阅。
+															<br><br>当前连接密码：<code id="ss-current-password">t4PjaaFeVtAJWGoo</code></p>
+											            <div class="form-group">
+											            	<div class="input-group mb-3">
+											                	<input id="ss-password" type="text" class="form-control" placeholder="请输入新密码" aria-label="">
+											                	<div class="input-group-append">
+											                		<button id="ss-random-password" class="btn btn-warning white" type="button">随机生成</button>
+											                	</div>
+											            	</div>
+											            </div>
+											        </div>
+							                    	<div class="col-13 d-flex flex-sm-row flex-column justify-content-end">
+							                    		<button id="ss-pwd-update" class="btn btn-primary">提交更改</button>
+							                    	</div>
+							                    </div>
+							                </div>
+							                
                                             <div class="tab-pane fade" id="method" role="tabpanel" aria-labelledby="method-tab" aria-expanded="false">
 							                    <div class="card">
 													<div class="header"> 
