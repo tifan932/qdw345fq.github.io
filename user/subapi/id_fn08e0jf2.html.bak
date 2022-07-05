@@ -387,7 +387,7 @@
     	                                        	<button type="button" class="btn btn-clash round dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="cool-clash"></i>&nbsp;Clash 订阅</button>
     	                                        	<div class="dropdown-menu dropdown-node dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-14px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
 													  
-													  <div class="dropdown-item"><a href="clash://install-config?url=https://www.tifan.ga/user/subapi/clash/id_1/sub.ini" <span ></span>Clash 一键导入</a></div>
+													  <div class="dropdown-item"><a href="clash://install-config?url=https://www.tifan.ga/user/subapi/clash/id_fn08e0jf2/sub.ini" <span ></span>Clash 一键导入</a></div>
     	                                        	</div>
     	                                        </div>
                                         </div>
